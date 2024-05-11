@@ -1,0 +1,9 @@
+body {
+    height: 100dvh;
+}
+.icons {
+    font-size: 24px;
+}
+.offcanvas {
+    --bs-offcanvas-width: 280px;
+}

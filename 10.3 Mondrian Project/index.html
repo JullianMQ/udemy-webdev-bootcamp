@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container {
+      display: grid;
+      height: 140vh;
+      width: 110vw;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+    }
+    .container > * {
+      padding: 5px;
+    }
+    .red {
+      background-color: #E72F24;
+      border: 5px solid #000;
+      grid-area: 1 / 1 / 3 / 3;
+    }
+    .white {
+      background-color: #F0F1EC;
+      border: 5px solid #000;
+    }
+    .blue {
+      background-color: #004592;
+      border: 5px solid #000;
+      border-bottom: 10px solid #000;
+    }
+    .yellow {
+      background-color: #F9D01E;
+      border: 5px solid #000;
+    }
+    .black {
+      background-color: #232629;
+      border: 5px solid #000;
+    }
+    .white-row-1 {
+      grid-area: 1 / 3 / 3 / 6;
+    }
+    .white-row-2-1 {
+      grid-area: 3 / 1 / 5 / 3;
+    }
+    .white-row-2-2 {
+      grid-area: 3 / 3 / 5 / 5;
+    }
+    .white-row-2-3 {
+      grid-row: span 2;
+    }
+    .white-row-3-1 {
+      grid-area: 5 / 1 / 6 / 3;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="container">
+      <div class="red"> </div>
+      <div class="white white-row-1"></div>
+      <div class="white white-row-2-1"></div>
+      <div class="white white-row-2-2"></div>
+      <div class="blue"></div>
+      <div class="white white-row-2-3"></div>
+      <div class="white white-row-3-1"></div>
+      <div class="yellow"></div>
+      <div class="black"></div>
+    </div>
+</body>
+
+</html>
