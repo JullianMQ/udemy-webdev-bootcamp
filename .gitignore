@@ -1,2 +1,4 @@
-~/.vim/backup
-~/.vim/
+*/~/.vim/backup/*
+~/.vim/backup/*
+*/~/.vim/*
+~/.vim/*
